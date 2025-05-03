@@ -1,0 +1,99 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: url('https://images.unsplash.com/photo-1533049022226-5e18f8e7d8e6') no-repeat center center fixed;
+  background-size: cover;
+  color: #f4f1e6;
+}
+
+/* Стилі для контейнера реєстрації */
+.registration-container, .thankyou-message {
+  background: rgba(30, 20, 10, 0.8);
+  padding: 40px;
+  max-width: 500px;
+  margin: 80px auto;
+  border: 3px solid #bfa97a;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #bfa97a;
+}
+
+/* Заголовки */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #ffe29a;
+  margin-bottom: 20px;
+}
+
+/* Параграфи */
+p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+/* Мітки */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+/* Поля вводу */
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f9f4e6;
+  color: #333;
+  font-size: 1em;
+}
+
+/* Кнопка */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7b4e16;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a86d2f;
+}
+
+/* Посилання */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ffe29a;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Медіа-запит для адаптивності */
+@media (max-width: 600px) {
+  .registration-container, .thankyou-message {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
